@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/custom_info_window_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/customInfoWindow_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="MezzyKh"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:fontFamily="@font/anonymous_pro_bold"/>
+
+    <TextView
+        android:id="@+id/customInfoWindow_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        tools:text="29th august,2020"
+        android:fontFamily="@font/anonymous_pro"/>
+
+    <Button
+        android:id="@+id/customInfoWindow_detailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_spinner"
+        android:backgroundTint="@color/color_white"
+        tools:text="View detail"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:fontFamily="@font/anonymous_pro_bold"/>
+
+</LinearLayout>

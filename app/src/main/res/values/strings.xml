@@ -1,0 +1,11 @@
+<!--
+  ~ Created by Muhammad Mehroz Afzal on 2020.
+  -->
+
+<resources>
+    <!-- App details -->
+    <string name="app_name">JeenyTask</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

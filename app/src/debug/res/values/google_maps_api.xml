@@ -1,0 +1,7 @@
+<!--
+  ~ Created by Muhammad Mehroz Afzal on 2020.
+  -->
+
+<resources>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAPefkAHAlyTc-um8a3B7RqqtvfnqOsQ1k</string>
+</resources>

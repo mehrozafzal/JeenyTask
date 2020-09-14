@@ -1,0 +1,6 @@
+/*
+ * Created by Muhammad Mehroz Afzal on 2020.
+ */
+
+include ':app'
+rootProject.name='JeenyTask'

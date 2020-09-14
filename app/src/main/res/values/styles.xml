@@ -1,0 +1,24 @@
+<!--
+  ~ Created by Muhammad Mehroz Afzal on 2020.
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_light_blue</item>
+        <item name="colorPrimaryDark">@color/color_dark_blue</item>
+        <item name="colorAccent">@color/color_white</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_light_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StartupTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Muhammad Mehroz Afzal on 2020.
+-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:ellipsize="end"
+    android:gravity="start|center_vertical"
+    android:lines="1"
+    android:padding="@dimen/_8sdp"
+    android:textColor="@color/color_white"
+    android:textSize="@dimen/_12ssp"
+    app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
+    tools:text="Vehicles"
+    android:fontFamily="@font/anonymous_pro_bold"/>
