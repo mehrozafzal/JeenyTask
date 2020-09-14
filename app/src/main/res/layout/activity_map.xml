@@ -12,7 +12,7 @@
             type="com.jeeny.task.ui.map.MapViewModel" />
     </data>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -27,7 +27,12 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.map.MapsActivity" />
-    </LinearLayout>
+            android:layout_below="@+id/activityMap_toolbar"
+            tools:context=".ui.map.MapActivity" />
+
+        <include
+            android:id="@+id/activityMap_emptyView"
+            layout="@layout/empty_view" />
+    </RelativeLayout>
 
 </layout>

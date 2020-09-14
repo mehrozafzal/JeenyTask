@@ -5,6 +5,7 @@
 package com.jeeny.task.di.modules
 
 
+import com.jeeny.task.ui.map.MapActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -16,14 +17,8 @@ import dagger.android.ContributesAndroidInjector
 @Module(includes = [FragmentModule::class]) // Including Fragment Module Available For Activities
 abstract class ActivityModule {
 
-/*    *//**
-     * Marking Activities to be available to contributes for Android Injector
-     *//*
     @ContributesAndroidInjector
-    abstract fun contributeSignupActivity(): SignupActivity
-
-    @ContributesAndroidInjector
-    abstract fun contributeOtpActivity(): OtpActivity*/
+    abstract fun contributeMapActivity(): MapActivity
 
 
 

@@ -5,7 +5,7 @@
 <resources>
     <!-- App details -->
     <string name="app_name">JeenyTask</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">JeenyTask</string>
 
 
 </resources>

@@ -10,7 +10,7 @@ import com.jeeny.task.di.base.AppInjector
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig
+import io.github.inflationx.viewpump.ViewPump
 import javax.inject.Inject
 
 
@@ -21,12 +21,12 @@ class App : Application(), HasActivityInjector {
 
 
     @Inject
-    lateinit var mCalligraphyConfig: CalligraphyConfig
+    lateinit var viewPump: ViewPump
 
     override fun onCreate() {
         super.onCreate()
         AppInjector.init(this)
-        CalligraphyConfig.initDefault(mCalligraphyConfig)
+        ViewPump.init(viewPump)
     }
 
     override fun activityInjector(): AndroidInjector<Activity> {

@@ -13,9 +13,11 @@ import com.jeeny.task.repository.api.ApiServices
 import com.jeeny.task.repository.api.network.LiveDataCallAdapterFactoryForRetrofit
 import dagger.Module
 import dagger.Provides
+import io.github.inflationx.calligraphy3.CalligraphyConfig
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor
+import io.github.inflationx.viewpump.ViewPump
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 import javax.inject.Singleton
 
 
@@ -64,10 +66,16 @@ class AppModule {
 
     @Provides
     @Singleton
-    fun provideCalligraphyDefaultConfig(): CalligraphyConfig {
-        return  CalligraphyConfig.Builder()
-            .setDefaultFontPath("res/font/anonymous_pro.ttf")
-            .setFontAttrId(R.attr.fontPath)
+    fun provideCalligraphyDefaultConfig(): ViewPump {
+        return ViewPump.builder()
+            .addInterceptor(
+                CalligraphyInterceptor(
+                    CalligraphyConfig.Builder()
+                        .setDefaultFontPath("res/font/anonymous_pro.ttf")
+                        .setFontAttrId(R.attr.fontPath)
+                        .build()
+                )
+            )
             .build()
     }
 
