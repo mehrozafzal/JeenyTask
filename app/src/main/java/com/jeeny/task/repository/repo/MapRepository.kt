@@ -22,9 +22,7 @@ import javax.inject.Singleton
 
 @Singleton
 class MapRepository @Inject constructor(
-    private val apiServices: ApiServices,
-    private val context: Context,
-    private val appExecutors: AppExecutors = AppExecutors()
+    private val apiServices: ApiServices
 ) {
 
     fun getVehicleResponseFromServer(): LiveData<Resource<VehicleResponse>> {

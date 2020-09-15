@@ -10,8 +10,8 @@ import java.io.Serializable
 data class Coordinate(
 
 	@field:SerializedName("latitude")
-	val latitude: Any? = null,
+	var latitude: Any? = null,
 
 	@field:SerializedName("longitude")
-	val longitude: Any? = null
+	var longitude: Any? = null
 )

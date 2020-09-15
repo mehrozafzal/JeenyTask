@@ -9,5 +9,5 @@ import com.google.gson.annotations.SerializedName
 data class VehicleResponse(
 
 	@field:SerializedName("poiList")
-	val poiList: List<PoiListItem?>? = null
+	var poiList: List<PoiListItem?>? = null
 )

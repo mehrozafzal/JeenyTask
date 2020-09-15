@@ -10,14 +10,14 @@ import java.io.Serializable
 data class PoiListItem(
 
 	@field:SerializedName("id")
-	val id: Int? = null,
+	var id: Int? = null,
 
 	@field:SerializedName("coordinate")
-	val coordinate: Coordinate? = null,
+	var coordinate: Coordinate? = null,
 
 	@field:SerializedName("fleetType")
-	val fleetType: String? = null,
+	var fleetType: String? = null,
 
 	@field:SerializedName("heading")
-	val heading: Any? = null
+	var heading: Any? = null
 )

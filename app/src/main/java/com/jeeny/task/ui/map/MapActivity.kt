@@ -266,7 +266,7 @@ class MapActivity : BaseActivity<ActivityMapBinding, MapViewModel>(), OnMapReady
 
     private fun addMarkerToMap(poiListItem: PoiListItem) {
         val lat: Double = poiListItem.coordinate?.latitude as Double
-        val lng: Double = poiListItem.coordinate.longitude as Double
+        val lng: Double = poiListItem.coordinate!!.longitude as Double
         val location = LatLng(lat, lng)
         val marker = mMap.addMarker(
             MarkerOptions().position(location).title(poiListItem.fleetType)
