@@ -6,4 +6,5 @@ package com.jeeny.task.ui.map
 
 interface MapContract {
     fun onTestButtonClicked()
+
 }

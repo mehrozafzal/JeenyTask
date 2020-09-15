@@ -15,12 +15,12 @@ class CustomInfoWindowAdapter(private val mContext: Context) : InfoWindowAdapter
 
     private fun renderWindowText(marker: Marker, view: View) {
         val title = marker.title
-        val tvTitle = view.findViewById<View>(R.id.customInfoWindow_handle) as TextView
+        val tvTitle = view.findViewById<View>(R.id.customInfoWindow_title) as TextView
         if (title != "") {
             tvTitle.text = title
         }
         val snippet = marker.snippet
-        val tvSnippet = view.findViewById<View>(R.id.customInfoWindow_date) as TextView
+        val tvSnippet = view.findViewById<View>(R.id.customInfoWindow_content) as TextView
         if (snippet != "") {
             tvSnippet.text = snippet
         }

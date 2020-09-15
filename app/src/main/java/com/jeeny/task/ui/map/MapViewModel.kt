@@ -4,7 +4,7 @@
 
 package com.jeeny.task.ui.map
 
-import com.jeeny.task.repository.repo.otp.MapRepository
+import com.jeeny.task.repository.repo.MapRepository
 import com.jeeny.task.ui.base.BaseViewModel
 import javax.inject.Inject
 
@@ -16,9 +16,10 @@ class MapViewModel @Inject constructor(
     private val mapRepository: MapRepository
 ) : BaseViewModel<MapContract>() {
 
+    private fun getVehicleResponseFromServer() =
+        mapRepository.getVehicleResponseFromServer()
 
-    fun testVM() {
-        contract.let { it?.onTestButtonClicked() }
-    }
+    fun getVehicleResponse() =
+        getVehicleResponseFromServer()
 
 }
